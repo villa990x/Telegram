@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: telegram-bot
+    runtime: python
+    buildCommand: ""
+    startCommand: "python mejor2.py"
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
